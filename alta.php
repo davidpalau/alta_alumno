@@ -13,10 +13,10 @@ if(mysqli_connect_errno()){
 
     echo "$nom, $cognom1, $cognom2 <br>";
 
-    $sql = "INSERT INTO alumnes (alumne_nom,alumne_cognom1,alumne_cognom2)
+    $sql = "INSERT INTO alumne (alumne_nom,alumne_cognom1,alumne_cognom2)
     VALUES ('$nom','$cognom1','$cognom2')";
 
-    echo "<br>";
+    echo "$sql<br>";
 
     mysqli_query($con, $sql);
     echo "<br>Registto grabado correctamente<br>";
